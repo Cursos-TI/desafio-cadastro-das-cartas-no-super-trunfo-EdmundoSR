@@ -28,10 +28,11 @@ int main() {
     int turisticos1, turisticos2;
 
     printf("Desafio Super Trunfo\n");
-    printf(" Informe os dados abaixo\n");
+    printf("Informe os dados abaixo\n");
 
     // Informações da primeira carta.
     
+    printf("Digite as informações da carta 1.\n");
     printf("Digite a letra do estado: ");
     scanf(" %c", &estado1);
 
@@ -54,6 +55,8 @@ int main() {
     scanf("%d", &turisticos1);
 
     // Informações da segunda carta.
+
+    printf("Digite as informações da carta 2.\n");
     printf("Digite a letra do estado: ");
     scanf(" %c",&estado2);
 
@@ -76,14 +79,16 @@ int main() {
     scanf("%d", &turisticos2);
 
     //Mostra dados das cartas.
+    printf("As informações da carta 1 é.\n");
     printf("\O estado da carta é: %c\n", estado1);
     printf("O código da carta é: %s\n", codigo1);
     printf("A cidade é: %s\n", cidade1);
     printf("A população é: %d\n", populacao1);
     printf("A área em km² é: %.2f\n", area1);
     printf("O PIB é: %.2f\n", pib1);
-    printf("Números de pontos turísticos é: %d\n", turisticos1);
+    printf("Números de pontos turísticos é: %d\n", turisticos1 );
 
+    printf("As informações da carta 2 é.\n");
     printf("\O estado da carta é: %c\n", estado2);
     printf("O código da carta é: %s\n", codigo2);
     printf("A cidade é: %s\n", cidade2);
