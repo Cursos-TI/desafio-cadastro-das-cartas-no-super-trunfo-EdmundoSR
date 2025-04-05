@@ -26,6 +26,8 @@ int main() {
     float area1, area2;
     float pib1, pib2;
     int turisticos1, turisticos2;
+    float densidade1, densidade2;
+    float pibcapita1, pibcapita2;
 
     printf("Desafio Super Trunfo\n");
     printf("Informe os dados abaixo\n");
@@ -80,22 +82,30 @@ int main() {
 
     //Mostra dados das cartas.
     printf("As informações da carta 1 é.\n");
-    printf("\O estado da carta é: %c\n", estado1);
+    printf("Estado da carta é: %c\n", estado1);
     printf("O código da carta é: %s\n", codigo1);
     printf("A cidade é: %s\n", cidade1);
     printf("A população é: %d\n", populacao1);
     printf("A área em km² é: %.2f\n", area1);
     printf("O PIB é: %.2f\n", pib1);
     printf("Números de pontos turísticos é: %d\n", turisticos1 );
+    densidade1 = (float)(populacao1 / area1);
+    printf("Densidade populacional é: %.2f\n", densidade1);
+    pibcapita1 = (float)(pib1 / populacao1);
+    printf("Pib per capita é: %.2f\n", pibcapita1);
 
     printf("As informações da carta 2 é.\n");
-    printf("\O estado da carta é: %c\n", estado2);
+    printf("Estado da carta é: %c\n", estado2);
     printf("O código da carta é: %s\n", codigo2);
     printf("A cidade é: %s\n", cidade2);
     printf("A população é: %d\n", populacao2);
     printf("A área em km² é: %.2f\n", area2);
     printf("O PIB é: %.2f\n", pib2);
     printf("Números de pontos turísticos é: %d\n", turisticos2);
-
+    densidade2 = (float)(populacao2 / area2);
+    printf("Densidade populacional é: %.2f\n", densidade2);
+    pibcapita2 = (float)(pib2 / populacao2);
+    printf("Pib per capita é: %.2f\n", pibcapita2);
+    
     return 0;
 }
