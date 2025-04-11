@@ -95,7 +95,7 @@ int main() {
     printf("Densidade populacional é: %.2f\n", densidade1);
     pibcapita1 = (float)(pib1 / populacao1);
     printf("Pib per capita é: %.2f\n", pibcapita1);
-    superpoder1 = (float)(populacao1 + area1 + pib1 + turisticos1 + pibcapita1 + densidade1);
+    superpoder1 = (float)(populacao1 + area1 + pib1 + turisticos1 + pibcapita1 + (1 / densidade1));
     printf("Super poder é: %.2f\n", superpoder1);
 
     printf("As informações da carta 2 é.\n");
@@ -110,11 +110,10 @@ int main() {
     printf("Densidade populacional é: %.2f\n", densidade2);
     pibcapita2 = (float)(pib2 / populacao2);
     printf("Pib per capita é: %.2f\n", pibcapita2);
-    superpoder2 = (float)(populacao2 + area2 + pib2 + turisticos2 + pibcapita2 + densidade2);
+    superpoder2 = (float)(populacao2 + area2 + pib2 + turisticos2 + pibcapita2 + (1 / densidade2));
     printf("Super poder é: %.2f\n", superpoder2);
 
     //Comparação da cartas.
-    
     
     return 0;
 }
