@@ -114,6 +114,13 @@ int main() {
     printf("Super poder é: %.2f\n", superpoder2);
 
     //Comparação da cartas.
-    
+    printf("populacao1 > populacao2: %d\n", populacao1 > populacao2);
+    printf("area1 > area2: %d\n", area1 > area2);
+    printf("pib1 > pib2: %d\n", pib1 > pib2);
+    printf("turisticos1 > turisticos2: %d\n", turisticos1 > turisticos2);
+    printf("densidade1 < densidade2: %d\n", densidade1 < densidade2);
+    printf("pibcapita1 > pibcapita2: %d\n", pibcapita1 > pibcapita2);
+    printf("superpoder1 > superpoder2: %d\n", superpoder1 > superpoder2);
+
     return 0;
 }
